@@ -1,0 +1,642 @@
+nav {
+  height: 70px;
+  transition: all 0.2s ease-in-out;
+}
+
+.NNULogoWhite {
+  filter: brightness(0) invert(1);
+  width: 70px;
+}
+
+ul li a {
+  color: white;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+ul li a:hover {
+  color: #22b686;
+}
+.program:hover .programDetail {
+  width: 150%;
+}
+.program:hover .programDetail div {
+  display: block;
+}
+.programDetail {
+  width: 0;
+
+  transition: all 0.1s ease-in-out;
+}
+.programDetail div {
+  display: none;
+}
+.navColorChange {
+  background-color: #173358;
+  box-shadow: 5px 5px 10px black;
+}
+.navColorChange ul li a {
+  color: rgb(255, 255, 255);
+}
+.navColorChange ul li a:hover {
+  color: #22b686;
+}
+
+.topMidText h1 {
+  font-size: 70px;
+}
+.topMidText::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+.btnArrow {
+  transition: all 0.2s ease-in-out;
+}
+.btnArrow:hover {
+  padding: 30px;
+  font-size: 20px;
+}
+
+/* topImagediv HomePage */
+.topBgImage {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.696)),
+    url(images/new\ next\ logo.jpg);
+  background-position-x: center;
+  background-position-y: -100px;
+  background-size: cover;
+}
+.topTextBottom {
+  bottom: 30px;
+}
+
+/* middle Cards HomePage */
+.cards {
+  width: 32%;
+  height: 600px;
+  cursor: pointer;
+}
+.card1BgImage {
+  background-image: url(images/school\ trip.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card2BgImage {
+  background-image: url(images/school\ outside.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card3BgImage {
+  background-image: url(images/DSC00415.jpg);
+  background-position: center;
+  background-position-x: -250px;
+  background-size: cover;
+}
+
+.card1Content,
+.content,
+.card2Content,
+.card3Content {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.content::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  left: -15px;
+  top: 0;
+}
+.card1BgImage:hover .card1Content {
+  opacity: 1;
+  background: linear-gradient(rgba(53, 53, 53, 0.018), rgba(23, 23, 23, 0.676));
+}
+.card1BgImage:hover .content {
+  opacity: 1;
+}
+.card2BgImage:hover .card2Content {
+  opacity: 1;
+  background: linear-gradient(rgba(53, 53, 53, 0.018), rgba(23, 23, 23, 0.676));
+}
+.card2BgImage:hover .content {
+  opacity: 1;
+}
+.card3BgImage:hover .card3Content {
+  opacity: 1;
+  background: linear-gradient(rgba(53, 53, 53, 0.018), rgba(23, 23, 23, 0.676));
+}
+.card3BgImage:hover .content {
+  opacity: 1;
+}
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+
+  background-color: transparent;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 0.7em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px, 2px);
+}
+/* founder */
+.founderContainer {
+  margin: 100px 0;
+}
+.founders img {
+  height: 100%;
+  border-radius: 40px;
+}
+.founderBackLogo {
+  transform: rotate(-10deg);
+  left: -200px;
+  top: 25%;
+  filter: blur(20px);
+}
+.founderBackLogo1 {
+  transform: rotate(-10deg);
+  right: 0px;
+  top: 25%;
+  filter: blur(20px);
+}
+.lineFounder::after {
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+.borderFounder {
+  width: 97%;
+  height: 97%;
+  border: 5px solid white;
+}
+
+/* education partners */
+
+/* Footer */
+footer {
+  margin-top: 200px;
+  height: calc(100vh - 400px);
+}
+.footerTop {
+  width: 900px;
+  height: 100px;
+  padding: 60px 0;
+  background: linear-gradient(to right, #173358, darkcyan, #1fc28f);
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #e44040;
+  color: #fff;
+  fill: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+/* school theme colors */
+
+.text-nnuGreen {
+  color: #22b686;
+}
+.bg-nnuGreen {
+  background-color: #22b686;
+}
+.bg-nnuBlue {
+  background-color: #173358;
+}
+.text-nnuBlue {
+  color: #173358;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 210px solid transparent;
+  border-top: 50px solid #22b686;
+}
+
+/* NCC Page */
+
+/* NCC Page Top image */
+.NCCTopImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.377)),
+    url(images/two\ students.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* ABE information Page */
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.upMain {
+  position: relative;
+  /*background-color: rgb(183, 211, 211);*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 150px;
+  height: 1000px;
+}
+.leftLineDiv {
+  display: flex;
+  height: 1800px;
+  width: 13%;
+  flex-direction: column;
+  gap: 11rem;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  /* background-color: aquamarine;*/
+}
+.upperLine {
+  background-color: #173358;
+  width: 10px;
+  height: 300px;
+}
+.squareShape {
+  width: 30px;
+  height: 30px;
+  rotate: 45deg;
+  position: absolute;
+  top: 300px;
+  background-color: #173358;
+}
+/**ncc logo*/
+.nccLogo {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  right: 8rem;
+  top: 14rem;
+  color: #173358;
+}
+.nccLogo img {
+  width: 350px;
+  height: 100%;
+  filter: brightness(0) invert(1);
+}
+.downLine {
+  background-color: #173358;
+  width: 10px;
+  height: 900px;
+}
+.lineText {
+  color: #173358;
+  rotate: 270deg;
+  font-size: 70px;
+  margin-left: -20px;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+}
+.triangleShape {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 920px solid #173358;
+  border-bottom: 900px solid transparent;
+  position: absolute;
+  right: -2rem;
+  top: 0;
+}
+/**module css**/
+.moduleDiv {
+  /*background-color: aquamarine;*/
+
+  font-family: "Inter", sans-serif;
+}
+.moduleTitle {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.leftSet,
+.rightSet {
+  width: 50%;
+  /*background-color: beige;*/
+  text-wrap: wrap;
+  align-items: center;
+}
+.moduleSet {
+  padding-left: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.moduleItem {
+  display: flex;
+  width: 80%;
+
+  /* background-color: rgb(158, 153, 162); */
+  align-items: center;
+  font-weight: 600;
+  gap: 10%;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.iconModule {
+  width: 0;
+  height: 0;
+  border-left: 12px solid #173358;
+  border-right: 12px solid #173358;
+  border-top: 12px solid #173358;
+  border-bottom: 16px solid transparent;
+  box-shadow: -1px -1px 0 0 black, /* left outline */ 1px -1px 0 0 black,
+    /* right outline */ 0 -1px 0 0 black; /* top outline */
+}
+
+/**Education level section*/
+.eduLevelDiv {
+  height: 300px;
+  width: 70%;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.level6Div {
+  height: 90%; /**for higher than other three div*/
+}
+.dottedLine {
+  border-top: 3px dashed #041842;
+
+  height: 0.5px;
+  width: 100%;
+}
+
+/* Responsive Tablet */
+
+@media screen and (max-width: 1024px) {
+  /* nav */
+  nav .desktopNav li {
+    display: none;
+  }
+  /* topText */
+  .topMidText h1 {
+    font-size: 3rem;
+  }
+  /* middleCardContainer */
+  .cardContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardContainer div {
+    width: 80%;
+    margin: 40px 0;
+  }
+  .card1Content,
+  .content,
+  .card2Content,
+  .card3Content {
+    opacity: 1;
+  }
+  .card1BgImage:hover .card1Content {
+    background: transparent;
+  }
+
+  .card2BgImage:hover .card2Content {
+    background: transparent;
+  }
+
+  .card3BgImage:hover .card3Content {
+    background: transparent;
+  }
+  .card1BgImage {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.409),
+        rgba(0, 0, 0, 0.244)
+      ),
+      url(images/school\ trip.jpg);
+  }
+  .card2BgImage {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.409),
+        rgba(0, 0, 0, 0.244)
+      ),
+      url(images/school\ outside.jpg);
+  }
+  .card3BgImage {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.409),
+        rgba(0, 0, 0, 0.244)
+      ),
+      url(images/DSC00415.jpg);
+  }
+  .founderRes1 {
+    flex-direction: column;
+  }
+  .founderRes2 {
+    flex-direction: column-reverse;
+  }
+  .founders {
+    justify-content: center;
+    align-items: center;
+  }
+  .founders div img {
+    border-radius: 0;
+  }
+  .founders .w-50 {
+    width: 100%;
+  }
+  .founders div p {
+    font-size: 20px;
+  }
+  .lineFounder::after {
+    content: "";
+    width: 0px;
+  }
+  footer {
+    height: calc(100vh - 800px);
+  }
+  footer .footerTop {
+    width: 700px;
+  }
+  .footerTop div img {
+    width: 50px;
+    margin: 0 20px;
+  }
+  .footerTop div h5 {
+    font-size: 20px;
+  }
+  .footerTop div h6 {
+    font-size: 13px;
+  }
+  .footerBodyContent {
+    flex-direction: column-reverse;
+  }
+  .footerBodyContent h6 {
+    font-size: 10px;
+    text-align: center;
+  }
+  .footerLogo {
+    display: none;
+  }
+
+  /* NCC Page */
+  .triangleShape {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 520px solid #173358;
+    border-bottom: 600px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nccLogo {
+    width: 280px;
+    position: absolute;
+    right: 0rem;
+    top: 50px;
+    filter: brightness(0) invert(1);
+  }
+  .nccLogo img {
+    width: 100%;
+  }
+}

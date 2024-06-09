@@ -1,0 +1,150 @@
+/* <!--edu level section--> */
+.nccLevel6Container{
+    display: flex;
+    
+    width: 100%;
+    height: 80px;
+    color: #0057B8;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    
+}
+.titleoflevel6{
+    color: #0057B8;
+    margin-bottom: 50px;
+}
+.level6Ncc,.level6Ncc,.level6Ncc
+,.level6Ncc{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 0px 2px #173356;
+    border-radius: 10px;
+    
+    
+    padding-top: 10px;
+}
+/**<!--Dropdown NCC-->*/
+.moduleDivContainer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.nccLv6lTitleContainer{
+    font-size: 32px;
+    color: #0057B8;
+    font-weight: 600;
+}
+.nccRequirementContainer{
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    width: 50%;
+    position: relative;
+    left: 70px;
+    
+}
+
+.requirement,.durationNcclvl6,
+.assNcclvl6,.clsTypelvl6{
+    
+    display: flex;
+    font-size: 19px;
+    color: black;
+    
+}
+.moduleSetContainer{
+    
+    display: flex;
+    width: 100%;
+}
+.firstSet1Container{
+    width: 50%;
+    height: 700px;
+    
+    align-items: center;display: flex;flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+    margin-left: 60px;
+   
+    
+    
+}
+.set1l6{
+    
+    
+
+}
+.set2l6{
+    position: absolute;
+    top: 605px;
+}
+.ltsubContainerl6{
+    position: absolute;
+    bottom: -487px;
+}
+
+
+.firstSub1Ncc,.secondSub1Ncc,.thirdSub1Ncc{
+    width: 90%;
+    height: 250px;
+    color: white;
+    background-color: #173356;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    /* border: 1px solid greenyellow; */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 2px  #22b686;
+ }
+ .secondSet2Container{
+    width: 50%;
+    height: 700px;
+   
+    align-items: center;display: flex;flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+ }
+ .firstSub2Ncc,.secondSub2Ncc,.thirdSub2Ncc{
+    width: 90%;
+    height: 250px;
+    color: white;
+    background-color: #173356;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    /* border: 1px solid greenyellow; */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 2px  #22b686;
+ }
+ .spacebehindreq{
+    margin-right: 90px;
+ }
+ .spacebehindduration{
+    margin-right: 133px;
+ }
+ .spacebehindclass{
+    margin-right: 120px;
+ }
+.spacebehindass{
+    margin-right: 35px;
+}
+.iconModule {
+    width: 0;
+    height: 0;
+    border-left: 12px solid #22b686;
+    border-right: 12px solid #22b686;
+    border-top: 12px solid #22b686;
+    border-bottom: 16px solid transparent;
+    box-shadow: -1px -1px 0 0 black, /* left outline */ 1px -1px 0 0 black,
+      /* right outline */ 0 -1px 0 0 black; /* top outline */
+  }
+  
